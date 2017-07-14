@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.isaacmiguelsg.tt.tuzo_time.HorarioAlimentadora">
+
+    <LinearLayout
+
+        android:layout_width="368dp"
+        android:layout_height="295dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccione la alimentadora"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/SAlimentadora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/Alimentadora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="La unidad no presenta retrasos o problemas."
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No problem :)" />
+
+        <fragment
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            class="com.isaacmiguelsg.tt.tuzo_time.Fragment1"
+            tools:layout="@layout/fragment1"
+            />
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
